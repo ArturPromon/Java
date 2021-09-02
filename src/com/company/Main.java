@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-         System.out.print("My name is Artur!");
+         int num1, num2, result;
+         num1 = 10;
+         num2 = 23;
+         result = num1%num2;
+         System.out.print(result);
     }
 }
