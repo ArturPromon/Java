@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main3 {
     public static void main(String[] args) {
+
 //        Scanner num = new Scanner(System.in);
 //        int first, second, result;
 //        System.out.println("First number is secret!");
@@ -34,18 +35,23 @@ public class Main3 {
 
          Scanner number2 = new Scanner(System.in);
          System.out.println("This is a game!");
-         System.out.println("Game rules: Summa must be lower then 100,but one of 2 numbers is secret!");
+         System.out.println("Game rules: Summa must be lower than 100,but one of 2 numbers is secret!");
          int num1, num2, result;
          System.out.print("First number is secret, please enter second number: ");
          num2 = number2.nextInt();
          num1 = 78;
          result = num1 + num2;
-         if(result<100 || 100>result){
-             System.out.print("You won the game!, because result was lower then 100");
+         if(num2<10){
+             System.out.println("second number must be bigger than 10");
          }else{
-             System.out.print("Game over!, because result was bigger then 100!");
+             if(result<100){
+                 System.out.println("You won the game!, because result was lower than 100");
+                 System.out.println("Secret number was" + num1);
+             }else{
+                 System.out.println("Game over!, because result was bigger than 100!");
+                 System.out.println("Secret number was" + num1);
+             }
          }
-
 
     }
 }
