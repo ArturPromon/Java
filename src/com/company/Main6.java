@@ -10,6 +10,9 @@ public class Main6 {
         granica_pensii = to_sto_vvodit_polzovatel.nextInt();
         for(int i = 0;i<granica_pensii;i++){
             System.out.println("Rabotaem poka nam " + i + " let");
+            System.out.println("Rabotaem poka nam " + i + " let");
+            System.out.println("Rabotaem poka nam " + i + " let");
+
         }
 
     }
