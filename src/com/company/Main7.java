@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main7 {
@@ -26,5 +27,7 @@ public class Main7 {
             nazvanie_massiva[i] = to_sto_vvodit_polzovatel.nextInt();
         }
 
+
+        System.out.print(Arrays.toString(nazvanie_massiva));
     }
 }
