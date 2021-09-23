@@ -6,8 +6,8 @@ public class Main16 {
     public static void main(String[] args) {
         int num1, num2, answer;
         char operator;
-
         boolean isTrue = true;
+
         Scanner reader = new Scanner(System.in);
         System.out.print("Enter first number: ");
         num1 = reader.nextInt();
@@ -36,7 +36,6 @@ public class Main16 {
                     case '+':
                         answer = num1 + num2;
                         System.out.print(answer);
-                        isTrue = false;
                         break;
                     case '-':
                         answer = num1 - num2;

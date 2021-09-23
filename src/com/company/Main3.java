@@ -33,23 +33,30 @@ public class Main3 {
 //            result = nr1 + nr2;
 //            System.out.print("Summa is " + result);
 
+         boolean isTrue = true;
          Scanner number2 = new Scanner(System.in);
          System.out.println("This is a game!");
          System.out.println("Game rules: Summa must be lower than 100,but one of 2 numbers is secret!");
          int num1, num2, result;
          System.out.print("First number is secret, please enter second number: ");
          num2 = number2.nextInt();
-         num1 = 78;
-         result = num1 + num2;
-         if(num2<10){
-             System.out.println("second number must be bigger than 10");
-         }else{
-             if(result<100){
-                 System.out.println("You won the game!, because result was lower than 100");
-                 System.out.println("Secret number was" + num1);
-             }else{
-                 System.out.println("Game over!, because result was bigger than 100!");
-                 System.out.println("Secret number was" + num1);
+         num1 = (int) Math.floor(Math.random() * 100);
+         while(isTrue) {
+             if (num2 < 10) {
+                 System.out.println("second number must be bigger than 10");
+                 System.out.print("Enter second number again: ");
+                 num2 = number2.nextInt();
+
+             } else {
+                 result = num1 + num2;
+                 if (result < 100) {
+                     System.out.println("You won the game!, because result was " + result);
+                     System.out.println("Secret number was " + num1);
+                 } else {
+                     System.out.println("Game over!, because result was bigger than 100!");
+                     System.out.println("Secret number was " + num1);
+                 }
+                 break;
              }
          }
 
