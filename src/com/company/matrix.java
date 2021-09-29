@@ -22,8 +22,11 @@ public class matrix {
 
         for(int i=0; i<3; i++){
             int res1 = matrix3[i][0] * matrix4[0][0] + matrix3[i][1] * matrix4[1][0] + matrix3[i][2] * matrix4[2][0];
-            System.out.print(res1 + " ");
-
+            int res2 = matrix3[i][0] * matrix4[0][1] + matrix3[i][1] * matrix4[1][1] + matrix3[i][2] * matrix4[2][1];
+            int res3 = matrix3[i][0] * matrix4[0][2] + matrix3[i][1] * matrix4[1][2] + matrix3[i][2] * matrix4[2][2];
+            System.out.print(res1 + "\t");
+            System.out.print(res2 + "\t");
+            System.out.print(res3);
             System.out.println();
         }
     }
