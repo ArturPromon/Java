@@ -39,8 +39,5 @@ public class Mathematics {
 
         int num7 = 9;
         System.out.print("Извлечение корня: "+Math.sqrt(num7));
-
-
-
     }
 }

@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class writer {
     public static void main(String[] args) {
         try{
-            File file = new File("src/com/company/file.txt");
+            File file = new File("src/com/company/test123123.java");
 
                 //Proverka na sozdanie faila odin raz
             if(!file.exists()){
@@ -22,7 +22,7 @@ public class writer {
             PrintWriter sometext = new PrintWriter(file);
 
             int num = 100/10;
-            sometext.println(Arrays.toString(matrix2));
+            sometext.println("package com.company;");
             sometext.close();
 
         }catch (Exception e){
