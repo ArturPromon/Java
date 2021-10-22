@@ -8,6 +8,9 @@ public class Phone {
         PhoneDemo3 phone4 = new PhoneDemo3("+372 58436363", 800, "Sony");
         PhoneDemo3 phone5 = new PhoneDemo3("+372 5270065", "LG");
         PhoneParametrs phone6 = new PhoneParametrs();
+        PhoneParametrs phone7 = new PhoneParametrs(2, 64, "IOS");
+        PhoneParametrs phone8 = new PhoneParametrs(2, 1500, "IOS", "+372 56845865", 64, "Iphone_12");
+
 
         phone1.number = "+372 56565675";
         phone1.price = 700;
@@ -36,11 +39,18 @@ public class Phone {
         System.out.println("");
         System.out.println(phone5.number);
         System.out.println(phone5.model);
+        System.out.println("");
         System.out.println(phone6.model);
-
+        System.out.println(phone6.system);
+        System.out.println("");
+        System.out.println(phone7.core);
+        System.out.println(phone7.memory);
+        System.out.println(phone7.system2);
+        System.out.println("");
         phone1.calling("Mom");
         phone2.calling("Dad");
+        phone8.getPhone8();
 
-
+        phone6.tellModel("Xiaomi");
     }
 }

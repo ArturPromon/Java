@@ -1,16 +1,20 @@
 package com.company;
 import java.util.Arrays;
+import java.util.Collections;
+
 
 public class MinMax {
     public static void main(String[] args) {
-        int[] numbers = {62710589, 62710573, 62710591, 62710651, 62710657, 62710693, 62710619, 62710631, 62710633, 62710639};
+        Integer [] numbers = {62710589, 62710573, 62710591, 62710651, 62710657, 62710693, 62710619, 62710631, 62710633, 62710639};
 
 //        Arrays.sort(numbers);
 //        System.out.println(Arrays.toString(numbers));
 //        System.out.print("Min: " + numbers[0] + " " + "Max: " + numbers[numbers.length -1]);
+          Arrays.sort(numbers, Collections.reverseOrder());
+          System.out.println("Arrays: " + Arrays.toString(numbers));
 
 
-//         int min, max;
+//        int min, max;
 //        min = max = numbers[0];
 //        for (int i = 1; i < numbers.length; i++) {
 //            if (numbers[i] < min)
@@ -28,8 +32,8 @@ public class MinMax {
 //        System.out.println(sum);
 //        System.out.println("Среднее арифметическое " + sum / numbers.length);
 
-        System.out.println("max: " + GetMax(numbers));
-        System.out.println(GetMin(numbers));
+//        System.out.println("max: " + GetMax(numbers));
+//        System.out.println(GetMin(numbers));
     }
     public static int GetMax(int[] array){
         int max = array[0];
