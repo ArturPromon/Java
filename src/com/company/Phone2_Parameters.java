@@ -1,6 +1,8 @@
 package com.company;
 
 public class Phone2_Parameters {
+    core intelcore = new core();
+    memory kingston = new memory();
     class core{
         String core = "switched off";
 
@@ -28,6 +30,5 @@ public class Phone2_Parameters {
         }
     }
 
-    core intelcore = new core();
-    memory kingston = new memory();
+
 }
